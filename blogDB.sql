@@ -51,3 +51,36 @@ create table comments(
    lastModified DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
    primary key(comID)
 )engine=innodb;
+
+Final Porject
+
+Ethan Thomas
+​
+Kayle Henry
+​
+$articles = [
+    [
+        'article_id' => 1,
+        'topic_id' => 2,
+        'author' => 'Ethan Thomas',
+        'title' => 'The Future of AI in Education',
+        'created_at' => '2025-05-07',
+        'content' => 'Artificial Intelligence is revolutionizing education by enabling personalized learning experiences, automating administrative tasks, and providing deep insights into student progress...'
+    ],
+    [
+        'article_id' => 2,
+        'topic_id' => 4,
+        'author' => 'John Doe',
+        'title' => 'Climate Change and Its Global Impact',
+        'created_at' => '2025-05-07',
+        'content' => 'Climate change remains one of the most pressing global issues, affecting ecosystems, economies, and societies worldwide. With increasing temperatures and rising sea levels...'
+    ],
+    [
+        'article_id' => 3,
+        'topic_id' => 7,
+        'author' => 'Jane Smith',
+        'title' => 'The Role of Persuasion in Public Speaking',
+        'created_at' => '2025-05-07',
+        'content' => 'Effective public speaking relies on persuasive techniques such as emotional appeals, logical arguments, and storytelling. Understanding how to craft a compelling speech...'
+    ]
+];
