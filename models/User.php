@@ -1,22 +1,28 @@
 <?php
-    class Contact{
-        private $contactID;
+    class User{
+        private $userID;
         private $username;
+        private $lastname;
+        private $firstname;
         private $email;
         private $passwd;
+        private $role;
 
         public function load($row){
-            $this->setContactID($row['contactID']);
+            $this->setUserID($row['userID']);
             $this->setUsername($row['username']);
+            $this->setLastName($row['lastname']);
+            $this->setFirstName($row['firstname']);
             $this->setEmail($row["email"]);
             $this->setPasswd($row["passwd"]);
+            $this->setRole($row['role']);
         }
 
-        public function setContactID($contactID){
+        public function setUserID($contactID){
             $this->contactID=$contactID;
         }
 
-        public function getContactID(){
+        public function getUserID(){
             return $this->contactID;
         }
 
@@ -26,6 +32,20 @@
 
         public function getUsername(){
             return $this->username;
+        }
+        public function setFirstName($firstname){
+            $this->firstname=$firstname;
+        }
+
+        public function getFirstName(){
+            return $this->firstname;
+        }
+        public function setLastName($lastname){
+            $this->lastname=$lastname;
+        }
+
+        public function getLastName(){
+            return $this->lastname;
         }
 
         public function setEmail($email){
@@ -42,6 +62,13 @@
 
         public function getPasswd(){
             return $this->passwd;
+        }
+        public function setRole($passwd){
+            $this->role=$role;
+        }
+
+        public function getRole(){
+            return $this->role;
         }
     }
 ?>
