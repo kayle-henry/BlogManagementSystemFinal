@@ -51,12 +51,6 @@ create table comments(
    lastModified DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
    primary key(comID)
 )engine=innodb;
-
-Final Porject
-
-Ethan Thomas
-​
-Kayle Henry
 ​
 $articles = [
     [
