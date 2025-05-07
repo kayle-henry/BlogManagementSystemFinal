@@ -1,47 +1,37 @@
 <?php
-    class Contact{
-        private $contactID;
-        private $username;
-        private $email;
-        private $passwd;
+    class Topic{
+        private $topID;
+        private $name;
+        private $description;
 
         public function load($row){
-            $this->setContactID($row['contactID']);
-            $this->setUsername($row['username']);
-            $this->setEmail($row["email"]);
-            $this->setPasswd($row["passwd"]);
+            $this->setTopID($row['TopID']);
+            $this->setName($row['name']);
+            $this->setDescription($row["description"]);
         }
 
-        public function setContactID($contactID){
+        public function setTopID($topID){
             $this->contactID=$contactID;
         }
 
-        public function getContactID(){
-            return $this->contactID;
+        public function getTopID(){
+            return $this->topID;
         }
 
-        public function setUsername($username){
-            $this->username=$username;
+        public function setName($name){
+            $this->name=$name;
         }
 
-        public function getUsername(){
-            return $this->username;
+        public function getName(){
+            return $this->name;
         }
 
-        public function setEmail($email){
-            $this->email=$email;
+        public function setDescription($description){
+            $this->description=$description;
         }
 
-        public function getEmail(){
-            return $this->email;
-        }
-
-        public function setPasswd($passwd){
-            $this->passwd=$passwd;
-        }
-
-        public function getPasswd(){
-            return $this->passwd;
+        public function getDescription(){
+            return $this->description;
         }
     }
 ?>
