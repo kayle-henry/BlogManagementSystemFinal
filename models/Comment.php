@@ -1,9 +1,9 @@
 <?php
-    class Contact{
-        private $contactID;
-        private $username;
-        private $email;
-        private $passwd;
+    class Comment{
+        private $comID;
+        private $authorID;
+        private $artID;
+        private $content;
 
         public function load($row){
             $this->setContactID($row['contactID']);
@@ -12,36 +12,36 @@
             $this->setPasswd($row["passwd"]);
         }
 
-        public function setContactID($contactID){
-            $this->contactID=$contactID;
+        public function setComID($comID){
+            $this->comID=$comID;
         }
 
-        public function getContactID(){
-            return $this->contactID;
+        public function getComID(){
+            return $this->comID;
         }
 
-        public function setUsername($username){
-            $this->username=$username;
+        public function setAuthorID($authorID){
+            $this->authorID=$authorID;
         }
 
-        public function getUsername(){
-            return $this->username;
+        public function getAuthorID(){
+            return $this->authorID;
         }
 
-        public function setEmail($email){
-            $this->email=$email;
+        public function setArtID($artID){
+            $this->artID=$artID;
         }
 
-        public function getEmail(){
-            return $this->email;
+        public function getArtID(){
+            return $this->artID;
         }
 
-        public function setPasswd($passwd){
-            $this->passwd=$passwd;
+        public function setContent($content){
+            $this->content=$content;
         }
 
-        public function getPasswd(){
-            return $this->passwd;
+        public function getContent(){
+            return $this->content;
         }
     }
 ?>
