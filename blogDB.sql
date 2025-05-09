@@ -46,13 +46,3 @@ create table comments(
    lastModified DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
    primary key(comID)
 )engine=innodb;
-
-
-INSERT INTO users VALUES
-();
-INSERT INTO topics VALUES
-();
-INSERT INTO articles VALUES
-();
-INSERT INTO comments VALUES
-();
