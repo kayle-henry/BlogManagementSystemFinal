@@ -1,4 +1,3 @@
-
 DROP DATABASE IF EXISTS blogdb;
 CREATE DATABASE blogdb;
 
@@ -48,3 +47,12 @@ create table comments(
    primary key(comID)
 )engine=innodb;
 
+
+INSERT INTO users VALUES
+();
+INSERT INTO topics VALUES
+();
+INSERT INTO articles VALUES
+();
+INSERT INTO comments VALUES
+();
