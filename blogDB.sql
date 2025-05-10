@@ -1,11 +1,5 @@
-DROP DATABASE IF EXISTS blogdb;
-CREATE DATABASE blogdb;
-
+create database blogdb;
 use blogdb;
-drop user if exists 'bloguser'@'localhost';
-
-CREATE USER IF NOT EXISTS 'bloguser'@'localhost' identified by 'blogpass';
-grant all on blogdb.* to 'bloguser'@'localhost';
 
 create table users(
    userID int AUTO_INCREMENT,
@@ -46,3 +40,6 @@ create table comments(
    lastModified DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
    primary key(comID)
 )engine=innodb;
+
+create user 'bloguser'@'localhost' identified by 'blogAssign3';
+grant all privileges on blogdb.* to 'bloguser'@'localhost';
