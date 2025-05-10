@@ -75,7 +75,7 @@
         function processPOST(){
             $username=$_POST['username'];
             $passwd=$_POST['passwd'];
-            $userDAO = new UserDAO();
+            $userDAO = new BlogDAO();
             $found=$userDAO->authenticate($username,$passwd);
             if($found==null){
                 $nextView="Location: controller.php?page=login";
